@@ -1,0 +1,70 @@
+-- IDF_TARGET is not set, guessed 'esp32s3' from sdkconfig '/Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/sdkconfig'
+-- Found Git: /opt/homebrew/bin/git (found version "2.50.0")
+-- The C compiler identification is GNU 13.2.0
+-- The CXX compiler identification is GNU 13.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/max/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/max/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/max/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20250707/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Dependencies lock doesn't exist, solving dependencies.
+NOTICE: Skipping optional dependency: espressif/esp32_p4_function_ev_board_noglib
+NOTICE: Using component placed at /Users/max/Work/CEDT/Embedded/BirdML/models/pigeon_detect for dependency "espressif/pigeon_detect", specified in /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/main/idf_component.yml
+..........................NOTICE: Updating lock file at /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/dependencies.lock
+NOTICE: Processing 11 dependencies:
+NOTICE: [1/11] espressif/button (3.5.0)
+NOTICE: [2/11] espressif/cmake_utilities (0.5.3)
+NOTICE: [3/11] espressif/dl_fft (0.8.0)
+NOTICE: [4/11] espressif/esp-dl (3.3.15)
+NOTICE: [5/11] espressif/esp32-camera (2.2.0)
+NOTICE: [6/11] espressif/esp32_s3_eye_noglib (3.1.0~1)
+NOTICE: [7/11] espressif/esp_codec_dev (1.1.0)
+NOTICE: [8/11] espressif/esp_jpeg (1.3.2)
+NOTICE: [9/11] espressif/esp_new_jpeg (1.0.2)
+NOTICE: [10/11] espressif/pigeon_detect (0.1.1) (/Users/max/Work/CEDT/Embedded/BirdML/models/pigeon_detect)
+NOTICE: [11/11] idf (5.3.6)
+NOTICE: Skipping optional dependency: espressif/esp32_p4_function_ev_board_noglib
+-- Project sdkconfig file /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/sdkconfig
+Loading defaults file /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/sdkconfig.defaults...
+Loading defaults file /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/sdkconfig.defaults.esp32s3...
+-- Compiler supported targets: xtensa-esp-elf
+-- Found Python3: /Users/max/.espressif/python_env/idf5.3_py3.10_env/bin/python (found version "3.10.20") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- USING O3
+-- App "pigeon_detect" version: 1
+-- Adding linker script /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_master.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_50.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_smp.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_dtm.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_test.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_scan.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /Users/max/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- BUTTON: 3.5.0
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ieee802154 esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__button espressif__cmake_utilities espressif__dl_fft espressif__esp-dl espressif__esp32-camera espressif__esp32_s3_eye_noglib espressif__esp_codec_dev espressif__esp_jpeg espressif__esp_new_jpeg esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon pigeon_detect protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/max/esp/esp-idf/components/app_trace /Users/max/esp/esp-idf/components/app_update /Users/max/esp/esp-idf/components/bootloader /Users/max/esp/esp-idf/components/bootloader_support /Users/max/esp/esp-idf/components/bt /Users/max/esp/esp-idf/components/cmock /Users/max/esp/esp-idf/components/console /Users/max/esp/esp-idf/components/cxx /Users/max/esp/esp-idf/components/driver /Users/max/esp/esp-idf/components/efuse /Users/max/esp/esp-idf/components/esp-tls /Users/max/esp/esp-idf/components/esp_adc /Users/max/esp/esp-idf/components/esp_app_format /Users/max/esp/esp-idf/components/esp_bootloader_format /Users/max/esp/esp-idf/components/esp_coex /Users/max/esp/esp-idf/components/esp_common /Users/max/esp/esp-idf/components/esp_driver_ana_cmpr /Users/max/esp/esp-idf/components/esp_driver_cam /Users/max/esp/esp-idf/components/esp_driver_dac /Users/max/esp/esp-idf/components/esp_driver_gpio /Users/max/esp/esp-idf/components/esp_driver_gptimer /Users/max/esp/esp-idf/components/esp_driver_i2c /Users/max/esp/esp-idf/components/esp_driver_i2s /Users/max/esp/esp-idf/components/esp_driver_isp /Users/max/esp/esp-idf/components/esp_driver_jpeg /Users/max/esp/esp-idf/components/esp_driver_ledc /Users/max/esp/esp-idf/components/esp_driver_mcpwm /Users/max/esp/esp-idf/components/esp_driver_parlio /Users/max/esp/esp-idf/components/esp_driver_pcnt /Users/max/esp/esp-idf/components/esp_driver_ppa /Users/max/esp/esp-idf/components/esp_driver_rmt /Users/max/esp/esp-idf/components/esp_driver_sdio /Users/max/esp/esp-idf/components/esp_driver_sdm /Users/max/esp/esp-idf/components/esp_driver_sdmmc /Users/max/esp/esp-idf/components/esp_driver_sdspi /Users/max/esp/esp-idf/components/esp_driver_spi /Users/max/esp/esp-idf/components/esp_driver_touch_sens /Users/max/esp/esp-idf/components/esp_driver_tsens /Users/max/esp/esp-idf/components/esp_driver_uart /Users/max/esp/esp-idf/components/esp_driver_usb_serial_jtag /Users/max/esp/esp-idf/components/esp_eth /Users/max/esp/esp-idf/components/esp_event /Users/max/esp/esp-idf/components/esp_gdbstub /Users/max/esp/esp-idf/components/esp_hal_ieee802154 /Users/max/esp/esp-idf/components/esp_hid /Users/max/esp/esp-idf/components/esp_http_client /Users/max/esp/esp-idf/components/esp_http_server /Users/max/esp/esp-idf/components/esp_https_ota /Users/max/esp/esp-idf/components/esp_https_server /Users/max/esp/esp-idf/components/esp_hw_support /Users/max/esp/esp-idf/components/esp_lcd /Users/max/esp/esp-idf/components/esp_local_ctrl /Users/max/esp/esp-idf/components/esp_mm /Users/max/esp/esp-idf/components/esp_netif /Users/max/esp/esp-idf/components/esp_netif_stack /Users/max/esp/esp-idf/components/esp_partition /Users/max/esp/esp-idf/components/esp_phy /Users/max/esp/esp-idf/components/esp_pm /Users/max/esp/esp-idf/components/esp_psram /Users/max/esp/esp-idf/components/esp_ringbuf /Users/max/esp/esp-idf/components/esp_rom /Users/max/esp/esp-idf/components/esp_system /Users/max/esp/esp-idf/components/esp_timer /Users/max/esp/esp-idf/components/esp_vfs_console /Users/max/esp/esp-idf/components/esp_wifi /Users/max/esp/esp-idf/components/espcoredump /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/managed_components/espressif__button /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/managed_components/espressif__cmake_utilities /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/managed_components/espressif__dl_fft /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/managed_components/espressif__esp-dl /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/managed_components/espressif__esp32-camera /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/managed_components/espressif__esp32_s3_eye_noglib /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/managed_components/espressif__esp_codec_dev /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/managed_components/espressif__esp_jpeg /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/managed_components/espressif__esp_new_jpeg /Users/max/esp/esp-idf/components/esptool_py /Users/max/esp/esp-idf/components/fatfs /Users/max/esp/esp-idf/components/freertos /Users/max/esp/esp-idf/components/hal /Users/max/esp/esp-idf/components/heap /Users/max/esp/esp-idf/components/http_parser /Users/max/esp/esp-idf/components/idf_test /Users/max/esp/esp-idf/components/ieee802154 /Users/max/esp/esp-idf/components/json /Users/max/esp/esp-idf/components/log /Users/max/esp/esp-idf/components/lwip /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/main /Users/max/esp/esp-idf/components/mbedtls /Users/max/esp/esp-idf/components/mqtt /Users/max/esp/esp-idf/components/newlib /Users/max/esp/esp-idf/components/nvs_flash /Users/max/esp/esp-idf/components/nvs_sec_provider /Users/max/esp/esp-idf/components/openthread /Users/max/esp/esp-idf/components/partition_table /Users/max/esp/esp-idf/components/perfmon /Users/max/Work/CEDT/Embedded/BirdML/models/pigeon_detect /Users/max/esp/esp-idf/components/protobuf-c /Users/max/esp/esp-idf/components/protocomm /Users/max/esp/esp-idf/components/pthread /Users/max/esp/esp-idf/components/sdmmc /Users/max/esp/esp-idf/components/soc /Users/max/esp/esp-idf/components/spi_flash /Users/max/esp/esp-idf/components/spiffs /Users/max/esp/esp-idf/components/tcp_transport /Users/max/esp/esp-idf/components/touch_element /Users/max/esp/esp-idf/components/ulp /Users/max/esp/esp-idf/components/unity /Users/max/esp/esp-idf/components/usb /Users/max/esp/esp-idf/components/vfs /Users/max/esp/esp-idf/components/wear_levelling /Users/max/esp/esp-idf/components/wifi_provisioning /Users/max/esp/esp-idf/components/wpa_supplicant /Users/max/esp/esp-idf/components/xtensa
+-- Configuring done (14.0s)
+-- Generating done (0.4s)
+-- Build files have been written to: /Users/max/Work/CEDT/Embedded/BirdML/examples/pigeon_detect/build

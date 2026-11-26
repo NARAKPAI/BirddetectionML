@@ -1,0 +1,30 @@
+CMake Warning (deprecated) at CMakeLists.txt:3 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (author) at /opt/homebrew/share/cmake/Modules/ExternalProject.cmake:2688 (message):
+  Policy CMP0225 is not set: ExternalProject sets CMAKE_INSTALL_PREFIX to
+  <INSTALL_DIR> in the default configure command.  Run "cmake --help-policy
+  CMP0225" for policy details.  Use the cmake_policy command to set the
+  policy and suppress this warning.
+
+  ExternalProject_Add(bootloader) uses the default configure command without
+  a CMAKE_INSTALL_PREFIX.  The OLD behavior leaves the external project's
+  install prefix at the CMake default; the NEW behavior sets it to
+  <INSTALL_DIR>.
+Call Stack (most recent call first):
+  /opt/homebrew/share/cmake/Modules/ExternalProject.cmake:2833 (_ep_extract_configure_command)
+  /opt/homebrew/share/cmake/Modules/ExternalProject.cmake:3316 (_ep_add_configure_command)
+  /Users/max/esp/esp-idf/components/bootloader/project_include.cmake:130 (externalproject_add)
+  /Users/max/esp/esp-idf/tools/cmake/build.cmake:432 (include)
+  /Users/max/esp/esp-idf/tools/cmake/build.cmake:681 (__build_process_project_includes)
+  /Users/max/esp/esp-idf/tools/cmake/project.cmake:722 (idf_build_process)
+  CMakeLists.txt:7 (project)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
