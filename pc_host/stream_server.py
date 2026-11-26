@@ -21,7 +21,7 @@ IMG_SIZE = 224
 
 def detect_serial_port() -> Optional[str]:
     if os.name == "nt":
-        return "COM8"
+        return "YOUR_COM_PORT"
     ports = sorted(
         glob.glob("/dev/cu.usbmodem*")
         + glob.glob("/dev/cu.usbserial*")
